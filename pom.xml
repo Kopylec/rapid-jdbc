@@ -12,7 +12,7 @@
         RapidJDBC is an AspectJ based project that simplifies dealing with SQL queries and updates.
         To run it you must enable an AspectJ weaver like: java -jar your.jar -javaagent:path/to/aspectjweaver.jar
     </description>
-    <url>https://github.com/FlyingDumpling/rapid-jdbc</url>
+    <url>https://github.com/Kopylec/rapid-jdbc</url>
 
     <licenses>
         <license>
@@ -23,13 +23,13 @@
     </licenses>
 
     <scm>
-        <connection>https://github.com/FlyingDumpling/rapid-jdbc.git</connection>
-        <url>https://github.com/FlyingDumpling/rapid-jdbc.git</url>
+        <connection>https://github.com/Kopylec/rapid-jdbc.git</connection>
+        <url>https://github.com/Kopylec/rapid-jdbc.git</url>
     </scm>
 
     <developers>
         <developer>
-            <id>FlyingDumpling</id>
+            <id>Kopylec</id>
             <name>Mariusz Kopylec</name>
             <email>mariusz.kopylec@o2.pl</email>
         </developer>
