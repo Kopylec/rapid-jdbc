@@ -136,6 +136,8 @@ public class CountryService {
     }
 }
 ```
+### Logging
+RapidJDBC uses a popular Java logging API called [SLF4J](http://www.slf4j.org/) to log informations. The logs are set to DEBUG and TRACE levels, so no INFOs will be logged by RapidJDBC.
 ### Summary
 RapidJDBC is primely useful when you have to deal with very complex SQL statements like nested selects etc. The library is thread safe so it can be used in **any Java environment**, for example in standalone Java application or J2EE container. Because of relying only on AspectJ it can be used with any Java framework as a support data access layer.
 
