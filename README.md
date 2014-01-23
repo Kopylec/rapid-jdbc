@@ -130,8 +130,8 @@ public class CountryService {
 
     @Transaction
     public void runInTransaction() {
-        List<Country> findCountryByName = countryRepository.findCountriesByName("Poland");
-        List<Country> findCountries = countryRepository.findCountries();
+        List<Country> countriesByName = countryRepository.findCountriesByName("Poland");
+        List<Country> countries = countryRepository.findCountries();
         countryRepository.updateCountryName("Poland", 69);
     }
 }
@@ -141,4 +141,4 @@ RapidJDBC uses a popular Java logging API called [SLF4J](http://www.slf4j.org/) 
 ### Summary
 RapidJDBC is primely useful when you have to deal with very complex SQL statements like nested selects etc. The library is thread safe so it can be used in **any Java environment**, for example in standalone Java application or J2EE container. Because of relying only on AspectJ it can be used with any Java framework as a support data access layer.
 
-Any feedback will be appreciated.
+#### Any feedback will be appreciated.
