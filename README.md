@@ -1,7 +1,7 @@
 RapidJDBC
 ==========
 
-RapidJDBC is Java library which provides an easier and faster way of developing applications that need to invoke many complex SQL statements. It combines the power of JDBC API and AspectJ features to hide the boiler plate code from the developers. Because of **AspectJ** weaver usage you **must enable weaving** in your application to able to get RapidJDBC work. To enable weaving you must use a java agent. For example, to run a standalone application type:
+RapidJDBC is Java library which provides an easier and faster way of developing applications that need to invoke many complex SQL statements. It combines the power of JDBC API and AspectJ features to hide the boiler plate code from the developers. Because of **AspectJ** weaver usage you **must enable weaving** in your application to able to get RapidJDBC work. To enable weaving you must use a java agent. For example, to run a standalone application execute command:
 `java -jar your-application.jar -javaagent:path/to/aspectjweaver.jar`
 
 More information about AspectJ weaving methods can be found [here](http://www.eclipse.org/aspectj/doc/next/devguide/ltw-configuration.html#enabling-load-time-weaving)
@@ -137,6 +137,6 @@ public class CountryService {
 }
 ```
 ### Summary
-RapidJDBC is primely useful when you have to deal with very complex SQL statements like nested selects etc. The library is thread safe so it can be used in **any Java environment**, for example standalone Java application or J2EE container. Because of relying only on AspectJ it can be used with any Java framework as a support data access layer.
+RapidJDBC is primely useful when you have to deal with very complex SQL statements like nested selects etc. The library is thread safe so it can be used in **any Java environment**, for example in standalone Java application or J2EE container. Because of relying only on AspectJ it can be used with any Java framework as a support data access layer.
 
 Any feedback will be appreciated.
