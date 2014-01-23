@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.kopylec.rapidjdbc</groupId>
+    <artifactId>rapid-jdbc</artifactId>
+    <version>1.0-RELEASE</version>
+    <packaging>jar</packaging>
+
+    <name>rapid-jdbc</name>
+    <description>
+        RapidJDBC is an AspectJ based project that simplifies dealing with SQL queries and updates.
+        To run it you must enable an AspectJ weaver like: java -jar your.jar -javaagent:path/to/aspectjweaver.jar
+    </description>
+    <url>https://github.com/FlyingDumpling/rapid-jdbc</url>
+
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <comments>Apache License Version 2.0</comments>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>https://github.com/FlyingDumpling/rapid-jdbc.git</connection>
+        <url>https://github.com/FlyingDumpling/rapid-jdbc.git</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>FlyingDumpling</id>
+            <name>Mariusz Kopylec</name>
+            <email>mariusz.kopylec@o2.pl</email>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.7.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <Built-By>Mariusz Kopylec</Built-By>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>
