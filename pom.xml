@@ -23,8 +23,9 @@
     </licenses>
 
     <scm>
-        <connection>https://github.com/Kopylec/rapid-jdbc.git</connection>
-        <url>https://github.com/Kopylec/rapid-jdbc.git</url>
+        <connection>scm:git@github.com:Kopylec/rapid-jdbc.git</connection>
+        <developerConnection>scm:git@github.com:Kopylec/rapid-jdbc.git</developerConnection>
+        <url>git@github.com:Kopylec/rapid-jdbc.git</url>
     </scm>
 
     <developers>
@@ -68,4 +69,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
 </project>
