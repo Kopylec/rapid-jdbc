@@ -1,7 +1,7 @@
 RapidJDBC
 ==========
 
-RapidJDBC is Java library which provides an easier and faster way of developing applications that need to invoke many complex SQL statements. It combines the power of JDBC API and AspectJ features to hide the boiler plate code from the developers. Because of **AspectJ** weaver usage you **must enable weaving** in your application to able to get RapidJDBC work. To enable weaving you must use a java agent. For example, to run a standalone application execute command:
+RapidJDBC is Java library which provides an easier and faster way of developing applications that need to invoke many complex SQL statements. It combines the power of JDBC API and AspectJ features to hide the boiler plate code from the developers. Because of **AspectJ** weaver usage you **must enable weaving** in your application to be able to get RapidJDBC work. To enable weaving you must use a java agent. For example, to run a standalone application execute command:
 `java -jar your-application.jar -javaagent:path/to/aspectjweaver.jar`
 
 More information about AspectJ weaving methods can be found [here](http://www.eclipse.org/aspectj/doc/next/devguide/ltw-configuration.html#enabling-load-time-weaving)
