@@ -63,7 +63,7 @@ public class Country {
 First thing you need to do is to **configure** RapidJDBC via `JDBContext` class.
 You must set two things:
  - data source
- - entity classes
+ - entity classes (optionaly)
 
 ```java
 import com.github.kopylec.rapidjdbc.JDBCContext;
