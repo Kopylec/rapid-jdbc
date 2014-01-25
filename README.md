@@ -18,7 +18,7 @@ Core features:
 ## Usage
 Below are the examples of RapidJDBC usage.
 ### Creating entity classes
-Any class with **no-arg constructor** can be an entity. To map a field to a `ResultSet` column name use `@Column` annotation directly on field. You can also have non-mapped fields in an entity if want. Remember that you get a benefit from mapped fields only when using `Repository.createEntity(...)`. See section "Executing SQLs" for more details.
+Any class with **no-arg constructor** can be an entity. To map a field to a `ResultSet` column name use `@Column` annotation directly on field. You can also have non-mapped fields in an entity if you want. Remember that you get a benefit from mapped fields only when using `Repository.createEntity(...)`. See section "Executing SQLs" for more details.
 ```java
 import com.github.kopylec.rapidjdbc.annotation.Column;
 ...
