@@ -75,7 +75,7 @@ JDBCContext.getInstance().setDataSource(dataSource);
 JDBCContext.getInstance().setEntityClasses(Country.class, Person.class);
 ```
 ### Executing SQLs
-In RapidJDBC you run SQLs by creating **repositories**. To create one you need extend from the basic `Repository` class provided by the library. Every repository **method can execute one and only one SQL** statement. To provide SQL statement parameters use method arguments.
+In RapidJDBC you run SQLs by creating **repositories**. To create one you need to extend from the basic `Repository` class provided by the library. Every repository **method can execute one and only one SQL** statement. To provide SQL statement parameters use method arguments.
 
 To execute a query you must annotate a repository method with `@Query` annotation. Inside the method you only have to deal with the `ResultSet`. `Repository` class provides convenient methods to simplify working with `ResultSet`. For example you can create an entity with a single `Repository.createEntity(...)` method invocation. To create an entity with this method you must map entity fields to `ResultSet` columns using `@Column` annotation. Remember that creating entity via `Repository.createEntity(...)` is easier but has slightly more performance overhead than using standard result set access methods like `Repository.getString(...)`
 
